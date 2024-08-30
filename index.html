@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+    </link>
+    <link rel="stylesheet" href="Style2.css">
+    </link>
+    <link rel="shortcut icon" type="x-icon" href="website_icon_hazard.png"></link>
+    <script defer src="script.js"> </script>
+    <script defer src="script2.js"> </script>
+    <title>Astral Express: Honkai Star Rail</title>
+</head>
+
+<body>
+    <div class="main_container">
+        <p class="warning">Please Rotate your Phone</p>
+        <div class="options">
+            <div class="optionItems optionButton" id="optionButton"><img src="icon_options.png"></div>
+            <div class="optionTray" id="optionTray">
+                <div class="optionItems" id="help"><img src="icon_help.png"></div>
+                <div class="optionItems" id="backpack"><img src="icon_backpack.png"></div>
+            </div>
+        </div>
+        <!----------------------------------------Tutorial Page--------------------------------------------->
+        <div class="hide_rooms" id="tutorial_page">
+            <div class="exitTutorial" id="exitTutorial"></div>
+            <img src="icon_left.png" id="left_button">
+            <img src="tutorial_1.png" class="tutorial_image" id="tutorial_1">
+            <img src="tutorial_2.png" class="tutorial_image" id="tutorial_2">
+            <img src="tutorial_3.png" class="tutorial_image" id="tutorial_3">
+            <img src="tutorial_4.png" class="tutorial_image" id="tutorial_4">
+            <img src="tutorial_5.png" class="tutorial_image" id="tutorial_5">
+            <img src="icon_right.png" id="right_button">
+        </div>
+        <!----------------------------------------Jump Scare------------------------------------------------>
+        <div class="itemPickUpPage" id="jumpScare_Container" class="jumpScare_Container">
+            <div class="blackBackground"></div>
+            <img src="jumpscare.jpg" class="landscapes jumpScareImage" id="jumpScareImage">
+            <div class="animatedPart" id="animatedPart"></div>
+            <div id="TryAgainButton" class="TryAgainButton">Retry</div>
+        </div>
+
+        <!----------------------------------sound receptor-------------------------------------------------->
+        <div class="sound_receptor_container">
+            <div class="amplitude_1" id="amplitude_1">
+            </div>
+            <div class="amplitude_2" id="amplitude_2">
+            </div>
+            <div class="amplitude_3" id="amplitude_3">
+            </div>
+            <div class="amplitude_4" id="amplitude_4">
+            </div>
+        </div>
+        <!----------------------------------Code Computer 2--------------------------------------->
+        <div class="itemPickUpPage" id="code_computer2">
+            <img src="comp2_fullpiece.png" class="CD">
+            <div class="exitPage" id="exitCodeComputer2">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (This must be the <p class="highlight">code</p> to that computer)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Code Computer 1--------------------------------------->
+        <div class="itemPickUpPage" id="code_computer1">
+            <img src="comp1_fullpiece.png" class="CD">
+            <div class="exitPage" id="exitCodeComputer1">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (This must be the <p class="highlight">code</p> to that computer)
+                </div>
+            </div>
+        </div>
+
+        <div class="itemsContainer" id="itemsContainer">
+            <div class="opacityNone inventory_row" id="inventory_row1">
+                <div class="item_images item_image1" id="item_image1"></div>
+                <div class="item_names item_name1" id="item_name1"></div>
+                <div class="item_usage use_item1" id="use_item1" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row2">
+                <div class="item_images item_image1" id="item_image2"></div>
+                <div class="item_names item_name1" id="item_name2"></div>
+                <div class="item_usage use_item1" id="use_item2" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row3">
+                <div class="item_images item_image1" id="item_image3"></div>
+                <div class="item_names item_name1" id="item_name3"></div>
+                <div class="item_usage use_item1" id="use_item3" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row4">
+                <div class="item_images item_image1" id="item_image4"></div>
+                <div class="item_names item_name1" id="item_name4"></div>
+                <div class="item_usage use_item1" id="use_item4" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row5">
+                <div class="item_images item_image1" id="item_image5"></div>
+                <div class="item_names item_name1" id="item_name5"></div>
+                <div class="item_usage use_item1" id="use_item5" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row6">
+                <div class="item_images item_image1" id="item_image6"></div>
+                <div class="item_names item_name1" id="item_name6"></div>
+                <div class="item_usage use_item1" id="use_item6" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row7">
+                <div class="item_images item_image1" id="item_image7"></div>
+                <div class="item_names item_name1" id="item_name7"></div>
+                <div class="item_usage use_item1" id="use_item7" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row8">
+                <div class="item_images item_image1" id="item_image8"></div>
+                <div class="item_names item_name1" id="item_name8"></div>
+                <div class="item_usage use_item1" id="use_item8" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row9">
+                <div class="item_images item_image1" id="item_image9"></div>
+                <div class="item_names item_name1" id="item_name9"></div>
+                <div class="item_usage use_item1" id="use_item9" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row10">
+                <div class="item_images item_image1" id="item_image10"></div>
+                <div class="item_names item_name1" id="item_name10"></div>
+                <div class="item_usage use_item1" id="use_item10" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row11">
+                <div class="item_images item_image1" id="item_image11"></div>
+                <div class="item_names item_name1" id="item_name11"></div>
+                <div class="item_usage use_item1" id="use_item11" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row12">
+                <div class="item_images item_image1" id="item_image12"></div>
+                <div class="item_names item_name1" id="item_name12"></div>
+                <div class="item_usage use_item1" id="use_item12" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row13">
+                <div class="item_images item_image1" id="item_image13"></div>
+                <div class="item_names item_name1" id="item_name13"></div>
+                <div class="item_usage use_item1" id="use_item13" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row14">
+                <div class="item_images item_image1" id="item_image14"></div>
+                <div class="item_names item_name1" id="item_name14"></div>
+                <div class="item_usage use_item1" id="use_item14" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row15">
+                <div class="item_images item_image1" id="item_image15"></div>
+                <div class="item_names item_name1" id="item_name15"></div>
+                <div class="item_usage use_item1" id="use_item15" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row16">
+                <div class="item_images item_image1" id="item_image16"></div>
+                <div class="item_names item_name1" id="item_name16"></div>
+                <div class="item_usage use_item1" id="use_item16" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row17">
+                <div class="item_images item_image1" id="item_image17"></div>
+                <div class="item_names item_name1" id="item_name17"></div>
+                <div class="item_usage use_item1" id="use_item17" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row18">
+                <div class="item_images item_image1" id="item_image18"></div>
+                <div class="item_names item_name1" id="item_name18"></div>
+                <div class="item_usage use_item1" id="use_item18" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row19">
+                <div class="item_images item_image1" id="item_image19"></div>
+                <div class="item_names item_name1" id="item_name19"></div>
+                <div class="item_usage use_item1" id="use_item19" data-value=""> use</div>
+            </div>
+            <div class="opacityNone inventory_row" id="inventory_row20">
+                <div class="item_images item_image1" id="item_image20"></div>
+                <div class="item_names item_name1" id="item_name20"></div>
+                <div class="item_usage use_item1" id="use_item20" data-value=""> use</div>
+            </div>
+        </div>
+        <!----------------------------------Lobby--------------------------------------->
+        <div class="lobby" id="lobby">
+
+            <button type="button" class="hallway" id="hallwayButton"></button>
+            <button type="button" class="lobby_Window_Button" id="lobby_Window_Button"></button>
+            <button type="button" class="lobby_Table_Button" id="lobby_Table_Button"></button>
+            <img src="lobby_scene.jpg" class="landscapes lobbyScene" id="lobbyScene">
+            <img src="lobby_scene1.jpg" class="landscapes lobbyScene2" id="lobbyScene2">
+
+        </div>
+        <!----------------------------------Lobby Window--------------------------------------->
+        <div class="hide_rooms lobbyWindow" id="lobbyWindow">
+            <button type="button" class="HiddenButtons return_buttons" id="returnLobbyFromWindow"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="lobby_window.jpg" class="landscapes jukeBoxArea" id="jukeBoxArea">
+        </div>
+        <!----------------------------------Lobby Table--------------------------------------->
+        <div class="hide_rooms lobby_Table" id="lobby_Table">
+            <button type="button" class="HiddenButtons return_buttons" id="fromLobbyTableButton"></button>
+            <button type="button" class="hologramButton1" id="hologramButton1"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="lobby_computer.jpg" class="landscapes lobby_computer" id="lobby_computer">
+        </div>
+
+        <div class="hide_rooms biometrics" id="biometrics1">
+            <div class="exitPage" id="exitBiometrics1"></div>
+            <div class="computer_Code1" id="computer_Code1">
+                <div class="computer_Name">GORV-U6N0</div>
+                <div class="digit_display" id="digit_display1">
+                    <div class="digits digit_one" id="digit_one1">0</div>
+                    <div class="digits digit_two" id="digit_two1">0</div>
+                    <div class="digits digit_three" id="digit_three1">0</div>
+                    <div class="digits digit_four" id="digit_four1">0</div>
+                </div>
+
+                <div class="digit_number">
+                    <div class="numbers number_one" id="number_one1">1</div>
+                    <div class="numbers number_two" id="number_two1">2</div>
+                    <div class="numbers number_three" id="number_three1">3</div>
+                    <div class="numbers number_four" id="number_four1">4</div>
+                    <div class="numbers number_five" id="number_five1">5</div>
+                    <div class="numbers number_six" id="number_six1">6</div>
+                    <div class="enter" id="enter1">Enter</div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Jukebox--------------------------------------->
+        <div class="hide_rooms jukeBox" id="jukeBox">
+            <button type="button" class=" HiddenButtons return_buttons" id="returnToLobby"> </button>
+            <button type="button" class="HiddenButtons PetAreaButton" id="PetAreaButton"> </button>
+            <button type="button" class="HiddenButtons warningButton" id="warningButton"> </button>
+            <button type="button" class="HiddenButtons jukeBoxDeskButton" id="jukeBoxDeskButton"> </button>
+            <button type="button" class="HiddenButtons PhonograpButton" id="PhonoGraphButton"></button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="juke_box.jpg" class="landscapes jukeBoxArea" id="jukeBoxArea">
+        </div>
+        <!----------------------------------Jukebox Door Hatch Locked--------------------------------------->
+        <div class="itemPickUpPage" id="locked">
+            <div class="exitPage" id="exitDoorLocked1">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (The door won`t budge, perhaps that <p class="highlight">mechanical switch</p> has something to do
+                    with it.)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Room Lever--------------------------------------->
+        <div class="hide_rooms roomLever" id="roomLever">
+            <button type="button" class="HiddenButtons room_lever_button" id="room_lever_button"> </button>
+            <button type="button" class=" HiddenButtons return_buttons" id="fromRoomLever"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="juke_box_room_lever.jpg" class="landscapes jukeBoxArea" id="jukeBoxArea">
+        </div>
+        <!----------------------------------Jukebox Desk--------------------------------------->
+        <div class="hide_rooms jukeboxDesk" id="jukeboxDesk">
+            <img src="forbidden cog.webp" class="papers clock_piece2 " id="clock_piece2">
+            <button type="button" class=" HiddenButtons return_buttons" id="fromJukeBoxDesk"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="juke_box_desk.jpg" class="landscapes juke_box_desk" id="juke_box_desk">
+        </div>
+        <!----------------------------------Jukebox Desk Clockwork--------------------------------------->
+        <div class="itemPickUpPage" id="pickUpClockWork2">
+            <img src="forbidden cog.webp" class="CD">
+            <div class="exitPage" id="exitClockPiece2">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (This would fit well to that <p class="highlight">gear machine</p> thingy...)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Warning Sign--------------------------------------->
+        <div class="itemPickUpPage" id="itemPickUpPage_warning_sign">
+            <div class="exitPage" id="exitWarning">
+                <img src="warning_sign.png" class="CD" id="warp_trotter">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (I wonder what lies beyond this door...)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Room Lever Missing--------------------------------------->
+        <div class="itemPickUpPage" id="itemPickUpPage_RoomLeverMissing">
+            <div class="exitPage" id="exitLeverMissing">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (A piece of <p class="highlight">clockwork</p> is missing...)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Room Lever Success--------------------------------------->
+        <div class="itemPickUpPage" id="itemPickUpPage_RoomLeverFound">
+            <div class="exitPage" id="exitLeverFound">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1 room1Open" id="room1Open">
+                <div class="trailblazer_Convo">
+                    (You hear the pressurized air gushing out of the chamber...)
+                </div>
+                <div class="trailblazer_Choices">
+                    <button type="button" class="selection" id="select1stRoom">Yank to Left</button>
+                    <button type="button" class="selection" id="select2ndRoom">Yank to Right</button>
+                </div>
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1 room2Close" id="room2Close">
+                <div class="trailblazer_Convo">
+                    (The gears won`t turn, I might find another piece of <p class="highlight">clockwork</p>
+                    somewhere...)
+                </div>
+                <div class="trailblazer_Choices">
+                    <button type="button" class="selection" id="select1stRoom2">Yank to Left</button>
+                    <button type="button" class="selection" id="select2ndRoom2">Yank to Right</button>
+                </div>
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1 room2Success" id="room2Success">
+                <div class="trailblazer_Convo">
+                    (You hear a <p class="highlight">mechanical door</p> opening from a distance...)
+                </div>
+                <div class="trailblazer_Choices">
+                    <button type="button" class="selection" id="select1stRoom3">Yank to Left</button>
+                    <button type="button" class="selection" id="select2ndRoom3">Yank to Right</button>
+                </div>
+            </div>
+
+        </div>
+        <!----------------------------------Hatch Animation--------------------------------------->
+        <div class="hide_rooms hatch" id="hatch">
+            <div class="upperDoor">.</div>
+            <div class="lowerDoor">.</div>
+
+        </div>
+        <!------------------------Pet Area--------------------------------------->
+        <div class="hide_rooms petArea" id="petArea">
+            <button type="button" class="return_buttons" id="left"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <button type="button" class="HiddenButtons warpTrotterButton" id="warpTrotterButton"></button>
+            <button type="button" class="HiddenButtons paintingsButton" id="paintingsButton"></button>
+            <button type="button" class="HiddenButtons pet_Area_Table_Button" id="pet_Area_Table_Button"></button>
+            <button type="button" class="HiddenButtons pet_Area_Cabinet_Button" id="pet_Area_Cabinet_Button"></button>
+            <button type="button" class="HiddenButtons right" id="right"></button>
+            <img src="pet_area.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!---------------------------------Pet Area Desk--------------------------------------->
+        <div class="hide_rooms pet_Area_Desk" id="pet_Area_Desk">
+            <img src="comp2_piece1.png" class="papers comp2_piece1 " id="comp2_piece1">
+            <button type="button" class=" HiddenButtons return_buttons" id="returnFromPetDesk"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="pet_area_table.jpg" class="landscapes pet_area_table" id="pet_area_table">
+        </div>
+        <!----------------------------------Comp2 Paper piece1--------------------------------------->
+        <div class="itemPickUpPage" id="pickUpComp2Paper1">
+            <img src="comp2_piece1.png" class="CD">
+            <div class="exitPage" id="exitComp2Paper1">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (I should collect more of these...)
+                </div>
+            </div>
+        </div>
+        <!---------------------------------Pet Area Cabinet--------------------------------------->
+        <div class="hide_rooms pet_Area_Cabinet" id="pet_Area_Cabinet">
+            <button type="button" class=" HiddenButtons return_buttons" id="returnFromPetCabinet"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="pet_area_cabinet.jpg" class="landscapes pet_area_cabinet" id="pet_area_cabinet">
+        </div>
+        <!----------------------------------Trotter--------------------------------------->
+        <div class="trotterPage" id="trotterPage">
+            <div class="exitPage" id="exitPage">
+                <img src="hearts.webp" class="heart" id="heart">
+                <img src="trotter.webp" class="CD" id="warp_trotter">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1" id="trotterConvo1">
+                <div class="trailblazer_Convo">
+                    Awww a cute little space pig!
+                </div>
+                <div class="trailblazer_Choices">
+                    <button type="button" class="selection" id="selectTrotter1">Pet it</button>
+                    <button type="button" class="selection" id="selectTrotter2_1">Give a treat</button>
+                </div>
+            </div>
+        </div>
+        <div class="Trailblazer_dialogueBox trotterConvo2" id="trotterConvo2">
+            <div class="trailblazer_Convo">
+                (It`s making too much noise...)
+            </div>
+            <div class="trailblazer_Choices">
+                <button type="button" class="selection" id="selectTrotter12">Pet it</button>
+                <button type="button" class="selection" id="selectTrotter2_2">Give a treat</button>
+            </div>
+        </div>
+        <div class="Trailblazer_dialogueBox trotterConvo3" id="trotterConvo3">
+            <div class="trailblazer_Convo">
+                (I should stop now)
+            </div>
+            <div class="trailblazer_Choices">
+                <button type="button" class="selection" id="selectTrotter13">Pet it</button>
+                <button type="button" class="selection" id="selectTrotter2_3">Give a treat</button>
+            </div>
+        </div>
+
+        <div class="itemPickUpPage" id="pickUpComp1Paper3">
+            <img src="comp1_piece3.png" class="CD">
+            <div class="exitPage" id="exitComp1Paper3">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    The warp trotter gave you a <p class="highlighy">small note</p>!
+                </div>
+            </div>
+        </div>
+
+        <div class="Trailblazer_dialogueBox trotterConvo5" id="trotterConvo5">
+            <div class="trailblazer_Convo">
+                Only if I had <p class="highlight">something</p> to feed it.
+            </div>
+        </div>
+
+        <!----------------------------------Comp1 Paper piece3--------------------------------------->
+        <div class="itemPickUpPage" id="pickUpComp1Paper3">
+            <img src="comp1_piece3.png" class="CD">
+            <div class="exitPage" id="exitComp1Paper3">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (Maybe I can <p class="highlight">glue</p> these pieces together...)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Pet Area Painting--------------------------------------->
+        <div class="hide_rooms petAreaPaintings" id="petAreaPaintings">
+            <img src="comp2_piece3.png" class="papers comp2_piece3 " id="comp2_piece3">
+            <button type="button" class="return_buttons" id="fromPaintings"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="petArea_paintings.jpg" class="landscapes pet_area" id="paintings">
+        </div>
+        <!----------------------------------Comp2 Paper piece3--------------------------------------->
+        <div class="itemPickUpPage" id="pickUpComp2Paper3">
+            <img src="comp2_piece3.png" class="CD">
+            <div class="exitPage" id="exitComp2Paper3">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (Maybe I can <p class="highlight">glue</p> these pieces together...)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Hallway--------------------------------------->
+        <div class="hide_rooms hallwayRoom" id="hallwayRoom">
+            <button type="button" class="return_buttons" id="returnToPetArea"> </button>
+            <button type="button" class="DanHeng_room_button" id="DanHengRoomButton"> </button>
+            <button type="button" class="HiddenButtons hallway2Button" id="hallway2Button"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="hallway_1.jpg" class="landscapes hallwayRoomClass" id="hallway">
+        </div>
+        <!----------------------------------Hallway 2--------------------------------------->
+        <div class="hide_rooms hallway2" id="hallway2">
+            <button type="button" class="March_room_button" id="MarchRoomButton"></button>
+            <button type="button" class="HiddenButtons hallway3Button" id="hallway3Button"> </button>
+            <button type="button" class="return_buttons" id="fromHallway2"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="hallway_2.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Hallway 2--------------------------------------->
+        <div class="hide_rooms hallway3" id="hallway3">
+            <button type="button" class="HiddenButtons hallway4Button" id="hallway4Button"> </button>
+            <button type="button" class="return_buttons" id="fromHallway3"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="hallway_3.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Hallway 3--------------------------------------->
+        <div class="hide_rooms hallway4" id="hallway4">
+            <button type="button" class="HiddenButtons hallwayEndButton" id="hallwayEndButton"> </button>
+            <button type="button" class="HiddenButtons laboratoryDoorButton" id="laboratoryDoorButton"> </button>
+            <button type="button" class="return_buttons" id="fromHallway4"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="hallway_4.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Hallway End--------------------------------------->
+        <div class="hide_rooms hallwayEnd" id="hallwayEnd">
+            <button type="button" class="HiddenButtons forbiddenDoorButton" id="forbiddenDoorButton"> </button>
+            <button type="button" class="HiddenButtons cornerRoomButton" id="cornerRoomButton"></button>
+            <button type="button" class="return_buttons" id="fromHallwayEnd"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="hallway_end.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Forbidden Door--------------------------------------->
+        <div class="hide_rooms forbiddenDoor" id="forbiddenDoor">
+            <button type="button" class="HiddenButtons forbiddenDoorOpenButton" id="forbiddenDoorOpenButton"> </button>
+            <button type="button" class="return_buttons" id="fromForbiddenDoor"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="corner_room_forbiddenDoor.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Forbidden Door Locked--------------------------------------->
+        <div class="itemPickUpPage" id="forbiddenDoorLocked">
+            <div class="exitPage" id="exitForbiddenDoorLocked">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (Perhaps that <p class="highlight">mechanical lever</p> has something to do with this...)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------end hallway 1--------------------------------------->
+        <div class="hide_rooms end_hallway1" id="end_hallway1">
+            <button type="button" class="HiddenButtons end_hallway2Button" id="end_hallway2Button"> </button>
+            <button type="button" class=" HiddenButtons return_buttons" id="fromEnd_hallway1"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="end_hallway1.jpg" class="landscapes juke_box_desk" id="juke_box_desk">
+        </div>
+        <!----------------------------------end hallway 2--------------------------------------->
+        <div class="hide_rooms end_hallway2" id="end_hallway2">
+            <button type="button" class="HiddenButtons end_gateButton" id="end_gateButton"> </button>
+            <button type="button" class=" HiddenButtons return_buttons" id="fromEnd_hallway2"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="end_hallway2.jpg" class="landscapes juke_box_desk" id="juke_box_desk">
+        </div>
+        <!----------------------------------end gate--------------------------------------->
+        <div class="hide_rooms end_gate" id="end_gate">
+            <button type="button" class="HiddenButtons end_EnterButton" id="end_EnterButton"> </button>
+            <button type="button" class=" HiddenButtons return_buttons" id="fromEnd_gate"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="end_gateway.jpg" class="landscapes juke_box_desk" id="juke_box_desk">
+        </div>
+        <!----------------------------------end Gate Laboratory Pillar required----------------------------------->
+        <div class="itemPickUpPage" id="endGateDenied">
+            <div class="exitPage" id="exitEndDGatedDenied">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (I should fix those devices at the laboratory first)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Escape Enter--------------------------------------->
+        <div class="hide_rooms laboratoryEnter" id="escape_1">
+            <button type="button" class="HiddenButtons" id="escape_2Button"> </button>
+            <button type="button" class="return_buttons" id="fromEscape_1Button"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="escape_1.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Escape 2--------------------------------------->
+        <div class="hide_rooms laboratoryEnter" id="escape_2">
+            <button type="button" class="HiddenButtons" id="escape_FinalButton"> </button>
+            <button type="button" class="return_buttons" id="fromEscape_2Button"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="escape_2.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Escape Final--------------------------------------->
+        <div class="hide_rooms laboratoryEnter" id="escape_Final">
+            <button type="button" class="HiddenButtons" id="escape_Button"> </button>
+            <button type="button" class="return_buttons" id="fromEscape_FinalButton"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="escape_final.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Escape Or Not--------------------------------------->
+        <div class="itemPickUpPage" id="escapeOrNot">
+            <div class="exitPage" id="exitEscapeOrNot">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    Escape?
+                </div>
+                <div class="trailblazer_Choices">
+                    <button type="button" class="selection" id="Finish">Yes</button>
+                    <button type="button" class="selection" id="Stay">No</button>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Laboratory Door--------------------------------------->
+        <div class="hide_rooms laboratoryEnter" id="laboratoryEnter">
+            <button type="button" class="HiddenButtons laboratoryStairsButton" id="laboratoryStairsButton"> </button>
+            <button type="button" class="return_buttons" id="fromLaboratoryDoor"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="laboratory_1.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Laboratory Door Locked--------------------------------------->
+        <div class="itemPickUpPage" id="doorLocked">
+            <div class="exitPage" id="exitDoorLocked">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (Perhaps I can find some <p class="highlight">key</p> somewhere)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Laboratory Main--------------------------------------->
+        <div class="hide_rooms laboratoryMain" id="laboratoryMain">
+            <button type="button" class="HiddenButtons laboratoryRadiationButton" id="laboratoryRadiationButton">
+            </button>
+            <button type="button" class="HiddenButtons laboratoryPillarsButton" id="laboratoryPillarsButton"> </button>
+            <button type="button" class="HiddenButtons laboratoryComputerButton" id="laboratoryComputerButton">
+            </button>
+            <button type="button" class="return_buttons" id="fromLaboratoryMain"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="laboratory_2.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Laboratory Radiation--------------------------------------->
+        <div class="hide_rooms laboratoryRadiation" id="laboratoryRadiation">
+            <button type="button" class="return_buttons" id="fromLaboratoryRadiation"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="laboratory_radiation.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Laboratory Computer--------------------------------------->
+        <div class="hide_rooms laboratoryComputer" id="laboratoryComputer">
+            <img src="clock_piece.png" class="clockPieces clock_piece1 " id="clock_piece1">
+            <button type="button" class="return_buttons" id="fromLaboratoryComputer"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="laboratory_computer.jpg" class="landscapes pet_area" id="laboratory_computer">
+        </div>
+        <!----------------------------------Clock Work piece1--------------------------------------->
+        <div class="itemPickUpPage" id="pickUpClockWork1">
+            <img src="clock_piece.png" class="CD">
+            <div class="exitPage" id="exitClockPiece1">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (This would fit well to that <p class="highlight">gear machine</p> thingy...)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Laboratory Pillars--------------------------------------->
+        <div class="hide_rooms laboratoryPillars" id="laboratoryPillars">
+            <button type="button" class="HiddenButtons laboratoryPillar2Button" id="laboratoryPillar2Button"> </button>
+            <button type="button" class="HiddenButtons laboratoryPillar1Button" id="laboratoryPillar1Button"> </button>
+            <button type="button" class="return_buttons" id="fromLaboratoryPillars"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="laboratory_pillar.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Laboratory Pillar 1--------------------------------------->
+        <div class="hide_rooms pillarOne" id="pillarOne">
+            <button type="button" class="return_buttons" id="fromPillarOne"> </button>
+            <button type="button" id="pillar1RequireButton"></button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="laboratory_pillar1.jpg" class="landscapes pet_area" id="pet_area">
+        </div>
+        <!----------------------------------Laboratory Pillar 2--------------------------------------->
+        <div class="hide_rooms pillarTwo" id="pillarTwo">
+            <button type="button" class="return_buttons" id="fromPillarTwo"> </button>
+            <button type="button" id="pillar2RequireButton"></button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="laboratory_pillar2.jpg" class="landscapes pet_area" id="pet_area">
+            <img src="key.png" id="March_Room_Key">
+        </div>
+        <!----------------------------------require items Laboratory Pillar-------------------------------------->
+        <div class="itemPickUpPage" id="requireItemsPillar">
+            <div class="exitPage" id="exitRequireItemsPillar">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (The machine needs specific parts to function.)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------success items Laboratory Pillar-------------------------------------->
+        <div class="itemPickUpPage" id="successItemsPillar">
+            <div class="exitPage" id="exitSuccessRequireItemsPillar">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (Perfect fit)
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------------------March Room Key-------------------------------------->
+        <div class="itemPickUpPage" id="pick_March_Key">
+            <img src="key.png" class="CD">
+            <div class="exitPage" id="exitMarchKey">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (This must be the key to that <p class=highlight>second room</p>)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Dan heng Room--------------------------------------->
+        <div class="hide_rooms DanHengRoom" id="DanHengRoom">
+            <button type="button" class="HiddenButtons retronizer_button" id="retronizer_button"> </button>
+            <button type="button" class="HiddenButtons bed_button" id="bed_button"> </button>
+            <button type="button" class="HiddenButtons dang_heng_desk_button" id="dang_heng_desk_button"> </button>
+            <button type="button" class="HiddenButtons stabilizer_button" id="stabilizer_button"> </button>
+            <button type="button" class="return_buttons" id="returnToHallway"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="Dan_Heng_room.jpg" class="landscapes DanHeng_scene2" id="DanHeng_scene2">
+        </div>
+        <!----------------------------------Dan Heng Retronizer Area--------------------------------------->
+        <div class="hide_rooms retronizer" id="retronizer">
+            <button type="button" class="return_buttons" id="fromRetronizer"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="Dan_Heng_room_Retronizer.jpg" class="landscapes Dan_Heng_room_Retronizer"
+                id="Dan_Heng_room_Retronizer">
+        </div>
+        <!----------------------------------Dan Heng Bed Area--------------------------------------->
+        <div class="hide_rooms DanHengBed" id="DanHengBed">
+            <button type="button" class="return_buttons" id="fromDanHengBed"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="Dan_Heng_Bed.jpg" class="landscapes Dan_Heng_Bed" id="Dan_Heng_Bed">
+        </div>
+        <!----------------------------------Dan Heng Desk Area--------------------------------------->
+        <div class="hide_rooms DanHengDesk" id="DanHengDesk">
+            <button type="button" class="return_buttons" id="fromDanHengDesk"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="Dan_Heng_Desk.jpg" class="landscapes Dan_Heng_Desk" id="Dan_Heng_Desk">
+        </div>
+        <!----------------------------------Dan Heng Stabilizer Area--------------------------------------->
+        <div class="hide_rooms stabilizer" id="stabilizer">
+            <button type="button" class="return_buttons" id="fromStabilizer"> </button>
+            <img src="comp1_piece2.png" id="comp1_piece2">
+            <img src="icon_return.png" class="icons_return">
+            <img src="Dan_Heng_room_stabilizer.jpg" class="landscapes Dan_Heng_room_stabilizer"
+                id="Dan_Heng_room_stabilizer">
+        </div>
+        <!----------------------------------Comp1 Paper piece2--------------------------------------->
+        <div class="itemPickUpPage" id="pickUpComp1Paper2">
+            <img src="comp1_piece2.png" class="CD">
+            <div class="exitPage" id="exitComp1Paper2">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (Interesting...)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------March Room--------------------------------------->
+        <div class="hide_rooms MarchRoom" id="MarchRoom">
+            <button type="button" class="return_buttons" id="returnToHallwayFromMarch"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <button type="button" class="HiddenButtons MarchCouchButton" id="MarchCouchButton"></button>
+            <button type="button" class="HiddenButtons MarchTableButton" id="MarchTableButton"></button>
+            <img src="March7th_scene1.jpg" class="landscapes March_scene2" id="March_scene2">
+        </div>
+        <!----------------------------------March Room Couch--------------------------------------->
+        <div class="hide_rooms MarchRoomCouch" id="MarchRoomCouch">
+            <button type="button" class="return_buttons" id="returnMarchRoomCouch"> </button>
+            <button type="button" class="HiddenButtons marchScreenButton" id="marchScreenButton"></button>
+            <button type="button" class="HiddenButtons marchCouchTableButton" id="marchCouchTableButton"></button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="March7th_couch.jpg" class="landscapes March7th_couch" id="March7th_couch">
+        </div>
+        <!----------------------------------March Room Couch Screen--------------------------------------->
+        <div class="hide_rooms MarchRoomCouchScreen" id="MarchRoomCouchScreen">
+            <img src="comp1_piece1.png" id="comp1_piece1">
+            <button type="button" class="return_buttons" id="returnMarchCouchScreen"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="MarchRoom_couch_closeUp.jpg" class="landscapes March7th_couch" id="March7th_table">
+        </div>
+        <!----------------------------------Comp1 Paper piece1--------------------------------------->
+        <div class="itemPickUpPage" id="pickUpComp1Paper1">
+            <img src="comp1_piece1.png" class="CD">
+            <div class="exitPage" id="exitComp1Paper1">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (Interesting...)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------March Room Couch Table--------------------------------------->
+        <div class="hide_rooms MarchRoomCouchTable" id="MarchRoomCouchTable">
+            <img src="pink_rolls.webp" class="pink_rolls" id="pink_rolls">
+            <button type="button" class="pink_rollsButton" id="pink_rollsButton"> </button>
+            <button type="button" class="return_buttons" id="returnMarchCouchTable"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="MarchRoom_couch_table.jpg" class="landscapes March7th_couch" id="MarchPinkRollsTable">
+        </div>
+        <div class="trotterPage" id="MarchPinkRollsMonologue">
+            <div class="exitPage" id="exitPageMarchPinkRolls">
+                <img src="pink_rolls.webp" class="CD">
+                <div class="Trailblazer_dialogueBox ">
+                    <div class="trailblazer_Convo">
+                        Maybe I can use this <p class="highlight">pink rolls</p> to bribe that space pig.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------March Room Tables--------------------------------------->
+        <div class="hide_rooms MarchRoomTable" id="MarchRoomTable">
+            <button type="button" class="return_buttons" id="returnMarchRoomTable"> </button>
+            <button type="button" class="MarchTableDeskButton" id="MarchTableDeskButton"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="March7th_table.jpg" class="landscapes March7th_couch" id="March7th_table">
+        </div>
+        <!----------------------------------March Room DeskTables--------------------------------------->
+        <div class="hide_rooms MarchDeskTable" id="MarchDeskTable">
+            <button type="button" class="return_buttons" id="returnDeskTable"> </button>
+            <button type="button" class="hologramButton" id="hologramButton"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="MarchRoom_table_glue.jpg" class="landscapes MarchTableBiometrics" id="MarchTableBiometrics">
+        </div>
+
+        <div class="hide_rooms biometrics" id="biometrics">
+            <div class="exitPage" id="exitBiometrics"></div>
+            <div class="computer_Code" id="computer_Code">
+                <div class="computer_Name">DEV-3B6X</div>
+                <div class="digit_display" id="digit_display">
+                    <div class="digits digit_one" id="digit_one">0</div>
+                    <div class="digits digit_two" id="digit_two">0</div>
+                    <div class="digits digit_three" id="digit_three">0</div>
+                    <div class="digits digit_four" id="digit_four">0</div>
+                </div>
+
+                <div class="digit_number">
+                    <div class="numbers number_one" id="number_one">1</div>
+                    <div class="numbers number_two" id="number_two">2</div>
+                    <div class="numbers number_three" id="number_three">3</div>
+                    <div class="numbers number_four" id="number_four">4</div>
+                    <div class="numbers number_five" id="number_five">5</div>
+                    <div class="numbers number_six" id="number_six">6</div>
+                    <div class="enter" id="enter">Enter</div>
+                </div>
+            </div>
+        </div>
+
+        <img src="key.png" class="Dan_Heng_key" id="Dan_Heng_key">
+
+
+        <!--------------------------------------------------Power Core------------------------------------------------>
+        <div class="itemPickUpPage" id="rewardPowerCore">
+            <img src="power_cog.webp" class="CD">
+            <div class="exitPage" id="exitPowerCore">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (This might be the part needed for that <p class="highlight">device</p> at the laboratory...)
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------------------------Cylinder Energy------------------------------------------------>
+        <div class="itemPickUpPage" id="rewardMysteriousCylinder">
+            <img src="geo_cylinder.webp" class="CD">
+            <div class="exitPage" id="exitMysteriousCylinder">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (This might be the part needed for that <p class="highlight">device</p> at the laboratory...)
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------------Dan Heng Key-------------------------------------->
+        <div class="itemPickUpPage" id="pick_Dan_Heng_Key">
+            <img src="key.png" class="CD">
+            <div class="exitPage" id="exitDanHengKey">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (This must be the key to that <p class=highlight>first room</p>)
+                </div>
+            </div>
+        </div>
+        <!----------------------------------Pick Up Glue--------------------------------------->
+        <div class="itemPickUpPage " id="pickUpGlue">
+            <img src="glue.png" class="CD">
+            <div class="exitPage" id="exitGlue">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (Now I can put together those shredded <p class=highlight>pieces of paper</p>)
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------------------Corner Room--------------------------------------->
+        <div class="hide_rooms CornerRoom" id="CornerRoom">
+            <button type="button" class="HiddenButtons CornerTableButton" id="CornerTableButton"></button>
+            <button type="button" class="HiddenButtons CornerDeskButton" id="CornerDeskButton"></button>
+            <button type="button" class="HiddenButtons CornerCabinetButton" id="CornerCabinetButton"></button>
+            <button type="button" class="return_buttons" id="fromCornerRoom"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <button type="button" class="return_buttons coffeeTableButton" id="coffeeTableButton"> </button>
+            <img src="corner_room.jpg" class="landscapes">
+        </div>
+
+        <!---------------------------------Corner Room Cabinet--------------------------------------->
+        <div class="hide_rooms cornerCabinet" id="cornerCabinet">
+            <button type="button" class=" HiddenButtons return_buttons" id="fromCornerCabinet"> </button>
+            <img src="comp2_piece2.png" class="papers comp2_piece2 " id="comp2_piece2">
+            <img src="icon_return.png" class="icons_return">
+            <img src="corner_room_cabinet.jpg" class="landscapes pet_area_cabinet" id="corner_cabinet">
+        </div>
+        <!----------------------------------Comp2 Paper piece2--------------------------------------->
+        <div class="itemPickUpPage" id="pickUpComp2Paper2">
+            <img src="comp2_piece2.png" class="CD">
+            <div class="exitPage" id="exitComp2Paper2">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (I wonder how many are there?...)
+                </div>
+            </div>
+        </div>
+        <!---------------------------------Corner Room Table--------------------------------------->
+        <div class="hide_rooms cornerTable" id="cornerTable">
+            <button type="button" class=" HiddenButtons return_buttons" id="fromCornerTable"> </button>
+            <img src="glue.png" class="glueButton" id="glueButton">
+            <img src="icon_return.png" class="icons_return">
+            <img src="corner_table.jpg" class="landscapes pet_area_cabinet" id="corner_table">
+        </div>
+        <!---------------------------------Corner Room Desk--------------------------------------->
+        <div class="hide_rooms cornerDesk" id="cornerDesk">
+            <button type="button" class=" HiddenButtons return_buttons" id="fromCornerDesk"> </button>
+            <img src="icon_return.png" class="icons_return">
+            <img src="key.png" class="Laboratory_key" id="Laboratory_key">
+            <img src="corner_room_desk.jpg" class="landscapes pet_area_cabinet" id="corner_desk">
+        </div>
+        <!----------------------------------Laboratory Room Key-------------------------------------->
+        <div class="itemPickUpPage" id="pick_Laboratory_Key">
+            <img src="key.png" class="CD">
+            <div class="exitPage" id="exitLabKey">
+            </div>
+            <div class="Trailblazer_dialogueBox trotterConvo1">
+                <div class="trailblazer_Convo">
+                    (This must be the key to that <p class=highlight>last room</p>)
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------Ending Video---------------------------->
+        <!-- <div class="endingVid"><video src="ending.mp4"></video></div> -->
+
+    </div>
+</body>
+
+</html>

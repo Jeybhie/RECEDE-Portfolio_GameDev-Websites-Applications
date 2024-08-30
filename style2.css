@@ -1,0 +1,582 @@
+
+/*-------------------inventory container------------*/
+.opacityNone{
+    opacity:0;
+    pointer-events: none;
+}
+.itemsContainer_Appear{
+    transform:translateX(100%);
+    pointer-events: all;
+}
+.itemsContainer{
+    opacity:1;
+    pointer-events: all;
+    position: absolute;
+    font-family:Calibri;
+    z-index:20;
+    background-color: rgba(23, 23, 23, 0.579);
+    width:45%;
+    height:75%;
+    top:18%;
+    left:-45%;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top:1%;
+    gap:2%;
+}
+.inventory_row{
+    font-size:2px;
+    width:95%;
+    background-color: rgba(58, 58, 58, 0.667);
+    height:20%;
+    z-index:11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
+}
+.item_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    height:100%;
+    padding:2%;
+}
+.item_images img{
+    width:80%;
+}
+.item_names{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    height:100%;
+    font-size:30px;
+}
+.item_usage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    height:50%;
+    font-size:30px;
+    width:18%;
+    margin-right:2%;    
+    background-color: rgb(250, 250, 250);
+}
+
+.inventory_row1_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row2_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row3_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row4_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row5_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row6_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row7_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row8_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row9_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row10_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row11_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row12_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row13_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row14_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row15_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+.inventory_row16_Appear{
+    opacity:1;
+    pointer-events: all;
+}
+
+.use_item1:active{
+    background-color: rgba(23, 23, 23, 0.579);
+}
+/*--------------------computer code----------------------*/
+.hologramButton1{
+    opacity:0;
+    z-index:10;
+    width:40%;
+    height:50%;
+    bottom:0%;
+    left:30%;
+}
+.computer_Code1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index:20;
+    opacity:1;
+    gap:5%;
+    position: absolute;
+    border:solid 2px gold;
+    border-radius: 20px;
+    height:65%;
+    width:60%;
+    top:10%;
+    left:20%;
+    background-color:rgba(222, 32, 32, 0.489);
+    padding:2%; 
+}
+.sound_receptor_container{
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    gap:5%;
+    width:10%;
+    position: absolute;
+    z-index:14;
+    top:3%;
+    right:10%;
+    height:10%;
+    z-index:12;
+    pointer-events: none;
+}
+.amplitude_1{
+    height:0%;
+    width:15%;
+    background-color: aliceblue;
+    animation: amplitude1 1.5s;
+}
+.amplitude_1_Appear{
+    height:0%;
+    width:15%;
+    animation: amplitude2 1.5s;
+}
+.amplitude_2{
+    height:0%;
+    width:15%;
+    background-color: aliceblue;
+
+    animation: amplitude2 1.5s;
+}
+.amplitude_2_Appear{
+    height:0%;
+    width:15%;
+
+    animation: amplitude1 1.5s;
+}
+.amplitude_3{
+    height:0%;
+    width:15%;
+    background-color: aliceblue;
+ 
+    animation: amplitude3 1.5s;
+}
+.amplitude_3_Appear{
+    height:0%;
+    width:15%;
+
+    animation: amplitude4 1.5s;
+}
+.amplitude_4{
+    height:0%;
+    width:15%;
+    background-color: aliceblue;
+    animation: amplitude4 1.5s;
+}
+.amplitude_4_Appear{
+    height:0%;  
+    width:15%;
+
+    animation: amplitude3 1.5s;
+}
+@keyframes amplitude4{
+    0%   {height:40%;}
+    5%  {height:60%;}
+    10%  {height:70%;}
+    15%  {height:90%;}
+    20%  {height:90%;}
+    25%  {height:90%;}
+    30%  {height:60%;}
+    35%  {height:70%;}
+    40%  {height:90%;}
+    45%  {height:75%;}
+    50%  {height:60%;}
+    55%  {height:80%;}
+    60%  {height:60%;}
+    65%  {height:50%;}
+    70%  {height:20%;}
+    75%  {height:30%}
+    80%  {height:15%;}
+    85%  {height:25%;}
+    90%  {height:10%;}
+    95%  {height:5%;}
+    100% {height:0%;}
+  }
+  @keyframes amplitude3{
+    0%   {height:30%;}
+    5%  {height:40%;}
+    10%  {height:60%;}
+    15%  {height:70%;}
+    20%  {height:50%;}
+    25%  {height:40%;}
+    30%  {height:60%;}
+    35%  {height:70%;}
+    40%  {height:55%;}
+    45%  {height:50%;}
+    50%  {height:45%;}
+    55%  {height:40%;}
+    60%  {height:35%;}
+    65%  {height:30%;}
+    70%  {height:40%;}
+    75%  {height:30%}
+    80%  {height:15%;}
+    85%  {height:25%;}
+    90%  {height:10%;}
+    95%  {height:5%;}
+    100% {height:0%;}
+  }
+  @keyframes amplitude2{
+    0%   {height:15%;}
+    5%  {height:25%;}
+    10%  {height:30%;}
+    15%  {height:45%;}
+    20%  {height:35%;}
+    25%  {height:45%;}
+    30%  {height:45%;}
+    35%  {height:40%;}
+    40%  {height:45%;}
+    45%  {height:30%;}
+    50%  {height:33%;}
+    55%  {height:28%;}
+    60%  {height:26%;}
+    65%  {height:37%;}
+    70%  {height:24%;}
+    75%  {height:20%}
+    80%  {height:15%;}
+    85%  {height:25%;}
+    90%  {height:10%;}
+    95%  {height:5%;}
+    100% {height:0%;}
+  }
+  @keyframes amplitude1{
+    0%   {height:15%;}
+    5%   {height:25%;}
+    10%  {height:22%;}
+    15%  {height:25%;}
+    20%  {height:24%;}
+    25%  {height:18%;}
+    30%  {height:25%;}
+    35%  {height:23%;}
+    40%  {height:22%;}
+    45%  {height:12%;}
+    50%  {height:19%;}
+    55%  {height:23%;}
+    60%  {height:17%;}
+    65%  {height:10%;}
+    70%  {height:14%;}
+    75%  {height:13%;}
+    80%  {height:12%;}
+    85%  {height:11%;}
+    90%  {height:10%;}
+    95%  {height:5%;}
+    100% {height:0%;}
+  }
+
+  /*-------------------------hallway end------------------*/
+  .end_hallway2Button{
+    opacity:0;
+    top: 20%;
+    left:28%;
+    height:50%;
+    width:40%;
+  }
+  .end_gateButton{
+    opacity:0;
+    top: 20%;
+    left:28%;
+    height:50%;
+    width:40%;
+  }
+  .end_EnterButton{
+    opacity:0;
+    top: 10%;
+    left:28%;
+    height:50%;
+    width:40%;
+  }
+  .Dan_Heng_key{
+    opacity:0;
+    pointer-events: none;
+    z-index:10;
+    position: absolute;
+    left:10%;
+    top:75%;
+    width:8%;
+  }
+  .Laboratory_key{
+    opacity:0;
+    pointer-events: none;
+    z-index:15;
+    position: absolute;
+    right:10%;
+    top:40%;
+    width:8%;
+    transform: rotate(45deg);
+  }
+  #March_Room_Key{
+    opacity:15;
+    pointer-events: none;
+    z-index:15;
+    position: absolute;
+    left:15%;
+    top:70%;
+    width:8%;
+    transform: rotate(45deg);
+  }
+  #comp1_piece1{
+    opacity:0;
+    z-index:10;
+    position:absolute;
+    pointer-events:none;
+    width:5%;
+    top:20%;
+    left:25%;
+  }
+  #comp1_piece2{
+    opacity:1;
+    z-index:10;
+    position:absolute;
+    width:5%;
+    top:75%;
+    left:30%;   
+    transform: rotateX(60deg);
+  }
+  #pillar2RequireButton{
+    opacity:0;
+    width:45%;
+    height:80%;
+    z-index: 10;
+    top:10%;
+    left:30%;
+  }
+  #pillar1RequireButton{
+    opacity:0;
+    width:45%;
+    height:80%;
+    z-index: 10;
+    top:10%;
+    left:25%;
+  }
+  #escape_2Button{
+    opacity:0;
+    width:60%;
+    height:60%;
+    left:20%;
+    top:30%;
+  }
+  #escape_FinalButton{
+    opacity:0;
+    width:60%;
+    height:60%;
+    left:20%;
+    top:30%;
+  }
+  #escape_Button{
+    opacity:0;
+    width:60%;
+    height:60%;
+    left:20%;
+    top:30%;
+  }
+.jumpScare_Container{   
+    opacity:0;
+    pointer-events: none;
+    position:absolute;
+    top:0%;
+    left:0%;    
+    object-fit: contain;
+    z-index:20;
+}
+.TryAgainButton{
+    position: absolute;
+    z-index:21;
+    top:5%;
+    right:3%;
+    border: solid red 2px;
+    padding:1%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:80%;
+    border-radius:10px;
+    color:red;
+    height:2%;
+}
+.TryAgainButton_Appear{
+    animation: appearButton 5s;
+}
+.animatedPart{
+    position: absolute;
+    top:0%;
+    left:0%;
+    z-index:20;
+    width:100%;
+    height:100%;
+}
+.animatedPart_Appear{
+    animation: bite 0.3s ease-in-out; 
+}
+@keyframes appearButton{
+    0%   {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes bite {
+    0%   { background: radial-gradient(circle at center, rgba(225, 225, 225, 0.0) 0%,
+        rgba(193, 19, 19, 0.086) 20%,
+        rgba(193, 19, 19, 0.380) 100%);
+    }
+    30%  {
+        background: radial-gradient(circle at center, rgba(225, 225, 225, 0.0) 0%,
+        rgba(193, 19, 19, 0.086) 40%,
+        rgba(193, 19, 19, 0.380) 100%);}
+    /* 40%  {
+        background: radial-gradient(circle at center, rgba(225, 225, 225, 0.0) 0%,
+        rgba(193, 19, 19, 0.0) 10%,
+        rgba(193, 19, 19, 0.0) 20%,
+        rgba(193, 19, 19, 0.0) 30%,
+        rgba(193, 19, 19, 0.0) 40%,
+        rgba(193, 19, 19, 0.100) 50%,
+        rgba(193, 19, 19, 0.155) 60%,
+        rgba(193, 19, 19, 0.203) 70%,
+        rgba(193, 19, 19, 0.284) 80%,
+        rgba(193, 19, 19, 0.349) 90%,
+        rgba(193, 19, 19, 0.380) 100%);
+    }; */
+    60%  {
+        background: radial-gradient(circle at center, rgba(225, 225, 225, 0.0) 0%,
+        rgba(193, 19, 19, 0.086) 70%,
+        rgba(193, 19, 19, 0.380) 100%);}
+    /* 80%  {
+        background: radial-gradient(circle at center, rgba(225, 225, 225, 0.0) 0%,
+        rgba(193, 19, 19, 0.0) 10%,
+        rgba(193, 19, 19, 0.0) 20%,
+        rgba(193, 19, 19, 0.0) 30%,
+        rgba(193, 19, 19, 0.0) 40%,
+        rgba(193, 19, 19, 0.0) 50%,
+        rgba(193, 19, 19, 0.0) 60%,
+        rgba(193, 19, 19, 0.0) 70%,
+        rgba(193, 19, 19, 0.0) 80%,
+        rgba(193, 19, 19, 0.349) 90%,
+        rgba(193, 19, 19, 0.380) 100%);
+    }; */
+    100%  {
+        background: radial-gradient(circle at center, rgba(225, 225, 225, 0.0) 0%,
+        rgba(193, 19, 19, 0.086)  100%);}
+  }
+  @keyframes cameraShake {
+    0%   {transform: translateX(3%) scale(0.2);}
+    10%   {transform: translateX(-3%) scale(0.5);}
+    20%   {transform: translateX(3%) scale(0.7);}
+    30%   {transform: translateX(-3%) scale(1);}
+    40%   {transform: translateX(3%);}
+    50%   {transform: translateX(-3%);}
+    60%   {transform: translateX(2%);}
+    70%   {transform: translateX(-2%);}
+    80%   {transform: translateX(1%);}
+    90%   {transform: translateX(-1%);}
+    100%   {transform: translateX(0%);}
+  }
+  .jumpScareImage{
+    position: absolute;
+    top:-10%;
+    left:0%;
+    width:100%;
+    z-index:20;
+  }
+  .jumpScareImage_Appear{
+    animation: cameraShake 0.5s ease-in-out;
+  }
+  .blackBackground{
+    position: absolute;
+    top:0%;
+    left:0%;
+    width:100%; 
+    height:100%;
+    background-color:black;
+    z-index:20;
+  }
+  .tutorial_image{
+    position: absolute;
+    width:60%;
+  }
+  #tutorial_page{
+    background-color: rgba(18, 17, 15, 0.325);
+    width:100%;
+    height:100%;
+    z-index:25;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+  .tutorial_image{
+    border: solid 1px white;
+    border-radius:10px;
+    opacity:0;
+    pointer-events: none;
+  }
+  .exitTutorial{
+    width:100%;
+    height:100%;
+    background-color: rgba(15, 15, 16, 0.585);
+  }
+  #left_button{
+    width:6%;
+    left: 2%;
+    position: absolute;
+  }
+  #right_button{
+    width:6%;
+    right: 2%;
+    position: absolute;
+  }
+  .endingVid{
+    width:100%;
+    position:absolute;
+  }
